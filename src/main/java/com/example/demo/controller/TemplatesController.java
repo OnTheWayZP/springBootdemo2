@@ -30,10 +30,6 @@ public class TemplatesController {
     public String helloFtl(){
         return "helloFtl";
     }
-
-    @RequestMapping("/index")
-    public String index(){
-        return "index";
-    }
+    
 
 }

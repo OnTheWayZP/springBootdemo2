@@ -1,13 +1,20 @@
-package com.example.demo;
+package com.example.demo.domain;
 
 import com.alibaba.fastjson.annotation.JSONField;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.Date;
 
 /**
  * Created by zhangpeng on 2018/6/7.
  */
+@Entity
 public class Demo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
     private String name;
